@@ -1,0 +1,6 @@
+C:\Users\cadik\Desktop\MarkovTest\MarkovTest\bin\Debug\MarkovTest.exe.config
+C:\Users\cadik\Desktop\MarkovTest\MarkovTest\bin\Debug\MarkovTest.exe
+C:\Users\cadik\Desktop\MarkovTest\MarkovTest\bin\Debug\MarkovTest.pdb
+C:\Users\cadik\Desktop\MarkovTest\MarkovTest\obj\Debug\MarkovTest.csprojResolveAssemblyReference.cache
+C:\Users\cadik\Desktop\MarkovTest\MarkovTest\obj\Debug\MarkovTest.exe
+C:\Users\cadik\Desktop\MarkovTest\MarkovTest\obj\Debug\MarkovTest.pdb
