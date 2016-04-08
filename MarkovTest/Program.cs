@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -39,12 +40,21 @@ namespace MarkovTest
             md.BuildDictionary(testString);
 
             Random RNG = new Random();
+
+            // Initialize a new instance of the SpeechSynthesizer.
+            SpeechSynthesizer synth = new SpeechSynthesizer();
+
+            // Configure the audio output.
+            synth.SetOutputToDefaultAudioDevice();
+
             while (true)
             {
                 Console.WriteLine("\n==============GENERATING===============");
-                Console.WriteLine("\n" + md.GenerateSentence(RNG.Next()));
+                string newSentence = md.GenerateSentence(RNG.Next());
+                Console.WriteLine("\n" + newSentence);
+                synth.Speak(newSentence);
                 //Console.ReadLine();
-                Thread.Sleep(5000);
+                Thread.Sleep(1000);
             }
         }
     }
